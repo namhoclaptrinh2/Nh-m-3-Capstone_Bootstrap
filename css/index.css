@@ -5,6 +5,15 @@
   --border-color: #e0e0e0;
   --light-bg-color: #f9f9f9;
   --text-color :rgb(150,146,164);
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+  font-family: "Nunito Sans", sans-serif;
 }
 
 html,
@@ -14,6 +23,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
 }
 
 /* HEADER */
@@ -184,7 +198,7 @@ header {
 .nav-item:hover .fa-chevron-down {
   transform: rotate(180deg);
 }
-/* header */
+
 
 /* Search */
 .search-container {
@@ -291,6 +305,7 @@ header {
   white-space: nowrap;
 }
 
+
 /* DARK LIGHT */
 /* Light theme */
 #myBody {
@@ -298,7 +313,6 @@ header {
   color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 /* Dark Theme*/
 .dark #myBody {
   background-color: black;
@@ -309,30 +323,50 @@ header {
   position: fixed;
   top: 30px;
   background-color: white;
-  border: 1px solid black;
+  
 }
-
 #switchButton .fa-sun {
   display: none;
 }
-
 #switchButton .fa-moon {
   display: block;
 }
-
 .dark #switchButton {
   background-color: black;
-  border: 1px solid white;
+ 
 }
-
 .dark #switchButton .fa-sun {
   display: block;
   color: white;
 }
-
 .dark #switchButton .fa-moon {
   display: none;
 }
+.dark .navbar-collapse .nav-link{
+  color: #fff;
+}
+/* Chuyển đổi màu nền carousel */
+.dark .content-left h3 {
+  color: #fff;
+}
+.dark .content-left p {
+  color: rgb(213, 209, 209);
+}
+
+/* Chế độ dark */
+.dark .carousel {
+  background: linear-gradient(
+      to right,
+      rgb(120 118 118),
+      rgb(255 255 255 / 92%)
+    ),
+    url(./images/banner.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 
 
@@ -466,4 +500,8 @@ header {
     line-height: 15px;
     text-align: center;
 }
+
+
+/* Tình */
+
 
