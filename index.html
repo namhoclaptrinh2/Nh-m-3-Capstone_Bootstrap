@@ -1,601 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bài tập Capstone</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>Bài tập Capstone</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- Fonts Nunito -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!-- js-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Main Css -->
-    <link rel="stylesheet" href="/css/main.css" />
+  <!-- Fonts Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap"
+    rel="stylesheet" />
+  <!-- js-->
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+  <!-- Main Css -->
+  <link rel="stylesheet" href="/css/main.css" />
 
-  <body id="myBody">
-    <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">
-            <span class="fa fa-handshake"></span> Masterwork
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item dropdown menu-item">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  id="navbar-dropdown-menu-link-21"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Pages <i class="fa fa-chevron-down"></i
-                ></a>
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="navbar-dropdown-menu-link-21"
-                >
-                  <a href="#" class="dropdown-item">Blog Posts</a>
-                  <a href="#" class="dropdown-item">Landing page</a>
-                  <a href="#" class="dropdown-item">404 page</a>
-                </div>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <div class="search-container">
-              <a href="#" class="search-icon">
-                <span class="fa fa-search"></span>
-              </a>
-              <div id="search" class="pop-overlay">
-                <div class="popup">
-                  <form class="search-box d-sm-flex">
-                    <input
-                      type="search"
-                      placeholder="Nhập từ khóa tìm kiếm"
-                      name=""
-                      required
-                      autofocus
-                    />
-                    <button type="submit" class="btn">Tìm kiếm</button>
-                    <a class="close" href="#close">×</a>
-                  </form>
-                </div>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body id="myBody">
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <span class="fa fa-handshake"></span> Masterwork
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item dropdown menu-item">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbar-dropdown-menu-link-21"
+                aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-chevron-down"></i></a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-21">
+                <a href="#" class="dropdown-item">Blog Posts</a>
+                <a href="#" class="dropdown-item">Landing page</a>
+                <a href="#" class="dropdown-item">404 page</a>
+              </div>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search-container">
+            <a href="#" class="search-icon">
+              <span class="fa fa-search"></span>
+            </a>
+            <div id="search" class="pop-overlay">
+              <div class="popup">
+                <form class="search-box d-sm-flex">
+                  <input type="search" placeholder="Nhập từ khóa tìm kiếm" name="" required autofocus />
+                  <button type="submit" class="btn">Tìm kiếm</button>
+                  <a class="close" href="#close">×</a>
+                </form>
               </div>
             </div>
-            <div class="btn-right">
-              <a class="btn btn-outline-primary theme-button" href="#demourl"
-                >Schedule a Demo</a
-              >
-            </div>
           </div>
-          <div class="mx-auto">
-            <button class="btn" id="switchButton" title="Click to switch theme">
-              <i class="far fa-moon"></i>
-              <i class="far fa-sun"></i>
-            </button>
+          <div class="btn-right">
+            <a class="btn btn-outline-primary theme-button" href="#demourl">Schedule a Demo</a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <div class="carousel">
-      <div id="myBody">
-        <div class="container">
-          <div class="content row">
-            <div class="col-lg-6 content-left">
-              <h3>We Execute Our Ideas From Start to Finish</h3>
-              <p class="mt-3 mb-lg-5 mb-4 lead">
-                Building a beautiful interactive business for startups and
-                innovative companies.
-              </p>
-              <a href="#url" class="btn btn-outline-primary theme-button"
-                >Get Started</a
-              >
-            </div>
-            <div class="col-lg-6 content-photo mt-lg-0 mt-5 w-50">
-              <img
-                src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/main.png"
-                class="right"
-                alt="main image"
-              />
-            </div>
+        </div>
+        <div class="mx-auto">
+          <button class="btn" id="switchButton" title="Click to switch theme">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="carousel">
+    <div id="myBody">
+      <div class="container">
+        <div class="content row">
+          <div class="col-lg-6 content-left">
+            <h3>We Execute Our Ideas From Start to Finish</h3>
+            <p class="mt-3 mb-lg-5 mb-4 lead">
+              Building a beautiful interactive business for startups and
+              innovative companies.
+            </p>
+            <a href="#url" class="btn btn-outline-primary theme-button">Get Started</a>
+          </div>
+          <div class="col-lg-6 content-photo mt-lg-0 mt-5 w-50">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/main.png"
+              class="right" alt="main image" />
           </div>
         </div>
       </div>
     </div>
-    <div class="us" id="myBody">
-      <div class="container" id="myBody">
-        <div class="content-top">
-          <h5>WHY CHOOSE US</h5>
-          <h2>Tools for business startup to professional</h2>
-          <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-            sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
+  </div>
+  <div class="us" id="myBody">
+    <div class="container" id="myBody">
+      <div class="content-top">
+        <h5>WHY CHOOSE US</h5>
+        <h2>Tools for business startup to professional</h2>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+          sodales quis. Integer sit amet mattis quam.
+        </p>
+      </div>
 
-        <div class="content-bot">
-          <div class="item">
-            <a href="#">
-              <img
-                src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s1.png"
-                alt=""
-                class="img-fluid"
-              />
-              <h3>Interactive</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium tempora rerum perspiciatis?
-              </p>
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img
-                src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s2.png"
-                alt=""
-                class="img-fluid w-25"
-              />
-              <h3>Interactive</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium tempora rerum perspiciatis?
-              </p>
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img
-                src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s3.png"
-                alt=""
-                class="img-fluid w-25"
-              />
-              <h3>Interactive</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium tempora rerum perspiciatis?
-              </p>
-            </a>
-          </div>
+      <div class="content-bot">
+        <div class="item">
+          <a href="#">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s1.png" alt=""
+              class="img-fluid" />
+            <h3>Interactive</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium tempora rerum perspiciatis?
+            </p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s2.png" alt=""
+              class="img-fluid w-25" />
+            <h3>Interactive</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium tempora rerum perspiciatis?
+            </p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s3.png" alt=""
+              class="img-fluid w-25" />
+            <h3>Interactive</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium tempora rerum perspiciatis?
+            </p>
+          </a>
         </div>
       </div>
     </div>
-    <!-- <section class="carousel" id="myBody"></section> -->
-    <link rel="stylesheet" href="../MasterWork/js/index.js" />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const searchIcon = document.querySelector(".search-icon");
-        const searchForm = document.querySelector(".pop-overlay");
+  </div>
+  <!-- <section class="carousel" id="myBody"></section> -->
+  <link rel="stylesheet" href="/js/index.js" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchIcon = document.querySelector(".search-icon");
+      const searchForm = document.querySelector(".pop-overlay");
 
-        searchIcon.addEventListener("click", function () {
-          searchForm.classList.toggle("active");
-        });
-
-        const closeButton = document.querySelector(".close");
-        closeButton.addEventListener("click", function () {
-          searchForm.classList.remove("active");
-        });
+      searchIcon.addEventListener("click", function () {
+        searchForm.classList.toggle("active");
       });
-    </script>
 
-    <!-- <script>
+      const closeButton = document.querySelector(".close");
+      closeButton.addEventListener("click", function () {
+        searchForm.classList.remove("active");
+      });
+    });
+  </script>
+
+  <!-- <script>
       document.getElementById("switchButton").onclick = function () {
         document.getElementById("myBody").classList.toggle("dark");
       };
     </script> -->
 
-    <section class="professional"></section>
-    <section class="w31-index3 py-5" id="myBody">
-      <div class="container py-lg-3 mt-3 HPAbout">
-        <div class="row align-items-center">
-          <div class="col-sm-6 pr-md-5">
-            <h6>ABOUT OUR COMPANY</h6>
-            <h3 class="mb-md-4 mb-3">
-              The Best Choice For Your Successful Business!
-            </h3>
-            <p class="mb-md-5 mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
-              repellendus illum harum quam nihil totam reprehenderit! Ut sed
-              eveniet quos! Asperiores officia, repudiandae similique
-              reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+  <section class="professional"></section>
+  <section class="w31-index3 py-5" id="myBody">
+    <div class="container py-lg-3 mt-3 HPAbout">
+      <div class="row align-items-center">
+        <div class="col-sm-6 pr-md-5">
+          <h6>ABOUT OUR COMPANY</h6>
+          <h3 class="mb-md-4 mb-3">
+            The Best Choice For Your Successful Business!
+          </h3>
+          <p class="mb-md-5 mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+            repellendus illum harum quam nihil totam reprehenderit! Ut sed
+            eveniet quos! Asperiores officia, repudiandae similique
+            reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+          </p>
+          <a href="#" class="btn btn-primary theme-button">READ MORE</a>
+        </div>
+        <div class="col-sm-6 pl-md-5 mt-sm-0 mt-5">
+          <img src="./img/about.jpg" alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="countup pb-5 pt-4" id="myBody">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-sm-6">
+          <div class="countup__item rounded">
+            <h4>Happy Customers</h4>
+            <p class="counter">10458</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
             </p>
-            <a href="#" class="btn btn-primary theme-button">READ MORE</a>
           </div>
-          <div class="col-sm-6 pl-md-5 mt-sm-0 mt-5">
-            <img src="./img/about.jpg" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
+          <div class="countup__item rounded">
+            <h4>Winning Awards</h4>
+            <p class="counter">890</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+          <div class="countup__item rounded">
+            <h4>Completed Projects</h4>
+            <p class="counter">5345</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="countup pb-5 pt-4" id="myBody">
+    </div>
+  </section>
+  <section class="w3l-index4" id="myBody">
+    <div class="new-block">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-sm-6">
-            <div class="countup__item rounded">
-              <h4>Happy Customers</h4>
-              <p class="counter">10458</p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                atque sed.
-              </p>
-            </div>
+        <div class="middle-section">
+          <div class="section-width">
+            <h2>
+              We are true to ourselves, and commit to always perform at our
+              best.
+            </h2>
           </div>
-          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
-            <div class="countup__item rounded">
-              <h4>Winning Awards</h4>
-              <p class="counter">890</p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                atque sed.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
-            <div class="countup__item rounded">
-              <h4>Completed Projects</h4>
-              <p class="counter">5345</p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                atque sed.
-              </p>
-            </div>
+          <div class="link-list-menu">
+            <p class="mt-md-4 mt-3 mb-md-5 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, doloribus atque. Corrupti exercitationem
+              voluptatem ipsum iste consequuntur et vitae voluptas temporibus?
+              Maxime dolores amet voluptatum illo consequatur placeat fugit
+              ducimus.
+            </p>
+            <a href="#" class="btn btn-light theme-button">READ MORE</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="w3l-index4" id="myBody">
-      <div class="new-block">
-        <div class="container">
-          <div class="middle-section">
-            <div class="section-width">
-              <h2>
-                We are true to ourselves, and commit to always perform at our
-                best.
-              </h2>
-            </div>
-            <div class="link-list-menu">
-              <p class="mt-md-4 mt-3 mb-md-5 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, doloribus atque. Corrupti exercitationem
-                voluptatem ipsum iste consequuntur et vitae voluptas temporibus?
-                Maxime dolores amet voluptatum illo consequatur placeat fugit
-                ducimus.
-              </p>
-              <a href="#" class="btn btn-light theme-button">READ MORE</a>
-            </div>
+    </div>
+  </section>
+  <section class="w3l-faq-block py-5" id="myBody">
+    <div class="container py-lg-5">
+      <div class="header-section text-center mx-auto">
+        <h6>QUESTIONS AND ANSWERS</h6>
+        <h3>General FAQs</h3>
+        <p class="my-3">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+          sodales quis. Integer sit amet mattis quam.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-5 mt-5">
+          <div class="faq-image">
+            <img src="./img/women.jpg" class="img-fluid rounded" alt="" />
           </div>
+        </div>
+        <div class="col-md-7 mt-5 pl-md-5">
+          <section class="w31-faq" id="faq">
+            <div class="faq-page">
+              <ul>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+                  <h2>There are many passages but the majority?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+
+                  <h2>Sed ut perspiciatis unde omnis?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+
+                  <h2>We denounce with righteous?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+
+                  <h2>perspiciatis unde omnis?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" checked />
+                  <i></i>
+
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
+                  <p>
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga,
+                    ad corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-    <section class="w3l-faq-block py-5" id="myBody">
-      <div class="container py-lg-5">
-        <div class="header-section text-center mx-auto">
-          <h6>QUESTIONS AND ANSWERS</h6>
-          <h3>General FAQs</h3>
-          <p class="my-3">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-            sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-5 mt-5">
-            <div class="faq-image">
-              <img src="./img/women.jpg" class="img-fluid rounded" alt="" />
-            </div>
-          </div>
-          <div class="col-md-7 mt-5 pl-md-5">
-            <section class="w31-faq" id="faq">
-              <div class="faq-page">
-                <ul>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
-                    <h2>There are many passages but the majority?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
+    </div>
+  </section>
 
-                    <h2>Sed ut perspiciatis unde omnis?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
-
-                    <h2>At vero eos iusto odio ducimus qui?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
-
-                    <h2>We denounce with righteous?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
-
-                    <h2>perspiciatis unde omnis?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked />
-                    <i></i>
-
-                    <h2>At vero eos iusto odio ducimus qui?</h2>
-                    <p>
-                      Voluptates amet earum velit nobis aliquam laboriosam nihil
-                      debitis facere voluptatibus consectetur quae quasi fuga,
-                      ad corrupti libero omnis sapiente non assumenda, incidunt
-                      officiis eaque iste minima autem.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-        </div>
+  <section class="w3l-products py-5 mb-4" id="myBody" id="products">
+    <div class="container py-lg-3 HomepageProjects">
+      <div class="header-section text-center mx-auto">
+        <h6 class="sub-title">Featured Cases</h6>
+        <h3>Completed Projects</h3>
+        <p class="my-3">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+          sodales quis. Integer sit amet mattis quam.
+        </p>
       </div>
-    </section>
-
-    <section class="w3l-products py-5 mb-4" id="myBody" id="products">
-      <div class="container py-lg-3 HomepageProjects">
-        <div class="header-section text-center mx-auto">
-          <h6 class="sub-title">Featured Cases</h6>
-          <h3>Completed Projects</h3>
-          <p class="my-3">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-            sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
-        <div class="row mt-5" id="myBody">
-          <div class="col-lg-10 mx-auto">
-            <div
-              id="parentHorizontalTab"
-              style="display: block; width: 100%; margin: 0px"
-            >
-              <ul class="resp-tabs-list hor_1">
-                <li
-                  class="resp-tab-item hor_1 resp-tab-active"
-                  aria-controls="hor_1_tab_item-0"
-                  role="tab"
-                  style="
+      <div class="row mt-5" id="myBody">
+        <div class="col-lg-10 mx-auto">
+          <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px">
+            <ul class="resp-tabs-list hor_1">
+              <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="
                     background-color: white;
                     border-color: rgb(193, 193, 193);
-                  "
-                >
-                  Project One
-                </li>
-                <li
-                  class="resp-tab-item hor_1"
-                  aria-controls="hor_1_tab_item-1"
-                  role="tab"
-                  style="background-color: rgb(245, 245, 245)"
-                >
-                  Project Two
-                </li>
-                <li
-                  class="resp-tab-item hor_1"
-                  aria-controls="hor_1_tab_item-2"
-                  role="tab"
-                  style="background-color: rgb(245, 245, 245)"
-                >
-                  Project Three
-                </li>
-                <div class="clear"></div>
-              </ul>
-              <div
-                class="resp-tabs-container hor_1"
-                style="border-color: rgb(193, 193, 193)"
-              >
-                <h2
-                  class="resp-accordion hor_1 resp-tab-active"
-                  role="tab"
-                  aria-controls="hor_1_tab_item-0"
-                  style="background: none; border-color: rgb(193, 193, 193)"
-                >
-                  <span class="resp-arrow"></span>Project One
-                </h2>
-                <div
-                  class="products-content resp-tab-content hor_1 resp-tab-content-active"
-                  aria-labelledby="hor_1_tab_item-0"
-                  style="display: block"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h3>Why a visual identity system is more memorable</h3>
-                      <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae
-                        perferendis dolores praesentium nulla quibusdam
-                        repellendus. consequatur minus aliquam corrupti
-                        blanditiis, necessitatibus consectetur modi ipsum natus
-                        accusantium sit pariatur.
-                      </p>
-                      <a
-                        href="#url"
-                        class="btn btn-outline-primary theme-button mt-3"
-                        >Know more</a
-                      >
-                    </div>
-                    <div class="col-md-6 mt-md-0 mt-5">
-                      <img
-                        src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
-                        class="img-fluid img-curve"
-                        alt="project image"
-                      />
-                    </div>
+                  ">
+                Project One
+              </li>
+              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab"
+                style="background-color: rgb(245, 245, 245)">
+                Project Two
+              </li>
+              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab"
+                style="background-color: rgb(245, 245, 245)">
+                Project Three
+              </li>
+              <div class="clear"></div>
+            </ul>
+            <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193)">
+              <h2 class="resp-accordion hor_1 resp-tab-active" role="tab" aria-controls="hor_1_tab_item-0"
+                style="background: none; border-color: rgb(193, 193, 193)">
+                <span class="resp-arrow"></span>Project One
+              </h2>
+              <div class="products-content resp-tab-content hor_1 resp-tab-content-active"
+                aria-labelledby="hor_1_tab_item-0" style="display: block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Why a visual identity system is more memorable</h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae
+                      perferendis dolores praesentium nulla quibusdam
+                      repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus
+                      accusantium sit pariatur.
+                    </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
+                      class="img-fluid img-curve" alt="project image" />
                   </div>
                 </div>
-                <h2
-                  class="resp-accordion hor_1"
-                  role="tab"
-                  aria-controls="hor_1_tab_item-1"
-                  style="
+              </div>
+              <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="
                     background-color: rgb(245, 245, 245);
                     border-color: rgb(193, 193, 193);
-                  "
-                >
-                  <span class="resp-arrow"></span>Project Two
-                </h2>
-                <div
-                  class="products-content resp-tab-content hor_1"
-                  aria-labelledby="hor_1_tab_item-1"
-                  style="border-color: rgb(193, 193, 193)"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img
-                        src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
-                        class="img-fluid img-curve"
-                        alt="project image"
-                      />
-                    </div>
-                    <div class="col-md-6 mt-md-0 mt-5">
-                      <h3>Make website that looks Lorem, ipsum dolor.</h3>
-                      <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae
-                        perferendis dolores praesentium nulla quibusdam
-                        repellendus. consequatur minus aliquam corrupti
-                        blanditiis, necessitatibus consectetur modi ipsum natus
-                        accusantium sit pariatur.
-                      </p>
-                      <a
-                        href="#url"
-                        class="btn btn-outline-primary theme-button mt-3"
-                        >Know more</a
-                      >
-                    </div>
+                  ">
+                <span class="resp-arrow"></span>Project Two
+              </h2>
+              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1"
+                style="border-color: rgb(193, 193, 193)">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
+                      class="img-fluid img-curve" alt="project image" />
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <h3>Make website that looks Lorem, ipsum dolor.</h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae
+                      perferendis dolores praesentium nulla quibusdam
+                      repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus
+                      accusantium sit pariatur.
+                    </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know more</a>
                   </div>
                 </div>
-                <h2
-                  class="resp-accordion hor_1"
-                  role="tab"
-                  aria-controls="hor_1_tab_item-2"
-                  style="
+              </div>
+              <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-2" style="
                     background-color: rgb(245, 245, 245);
                     border-color: rgb(193, 193, 193);
-                  "
-                >
-                  <span class="resp-arrow"></span>Project Three
-                </h2>
-                <div
-                  class="products-content resp-tab-content hor_1"
-                  aria-labelledby="hor_1_tab_item-2"
-                  style="border-color: rgb(193, 193, 193)"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h3>Why a visual identity system is more memorable</h3>
-                      <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae
-                        perferendis dolores praesentium nulla quibusdam
-                        repellendus. consequatur minus aliquam corrupti
-                        blanditiis, necessitatibus consectetur modi ipsum natus
-                        accusantium sit pariatur.
-                      </p>
-                      <a
-                        href="#url"
-                        class="btn btn-outline-primary theme-button mt-3"
-                        >Know more</a
-                      >
-                    </div>
-                    <div class="col-md-6 mt-md-0 mt-5">
-                      <img
-                        src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
-                        class="img-fluid img-curve"
-                        alt="project image"
-                      />
-                    </div>
+                  ">
+                <span class="resp-arrow"></span>Project Three
+              </h2>
+              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2"
+                style="border-color: rgb(193, 193, 193)">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Why a visual identity system is more memorable</h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae
+                      perferendis dolores praesentium nulla quibusdam
+                      repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus
+                      accusantium sit pariatur.
+                    </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
+                      class="img-fluid img-curve" alt="project image" />
                   </div>
                 </div>
               </div>
@@ -603,591 +483,490 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="w3l-testimonials" id="testimonials">
-      <div class="testimonials py-5" id="myBody">
-        <style>
-          .testimonials {
-            background: linear-gradient(
-                to right,
-                var(--bg-color),
-                rgba(255, 255, 255, 0.77)
-              ),
-              url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-          }
-        </style>
-        <div class="container py-lg-3 HomePageTestimonials">
-          <div class="header-section text-center mx-auto">
-            <h6 class="sub-title">Our Clients Testimonials</h6>
-            <h3>What People Say</h3>
-            <p class="my-3">
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
-              turpis sodales quis. Integer sit amet mattis quam.
-            </p>
-          </div>
-          <div class="row mt-4">
-            <div class="col-md-12 mx-auto pb-5">
-              <div class="owl-two owl-carousel owl-theme owl-loaded owl-drag">
-                <div class="owl-stage-outer">
-                  <div
-                    class="owl-stage"
-                    style="
+    </div>
+  </section>
+  <section class="w3l-testimonials" id="testimonials">
+    <div class="testimonials py-5" id="myBody">
+      <style>
+        .testimonials {
+          background: linear-gradient(to right,
+              var(--bg-color),
+              rgba(255, 255, 255, 0.77)),
+            url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+        }
+      </style>
+      <div class="container py-lg-3 HomePageTestimonials">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">Our Clients Testimonials</h6>
+          <h3>What People Say</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12 mx-auto pb-5">
+            <div class="owl-two owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="owl-stage-outer">
+                <div class="owl-stage" style="
                       transform: translate3d(-1150px, 0px, 0px);
                       transition: all 0.5s ease 0s;
                       width: 4600px;
-                    "
-                  >
-                    <div class="owl-item cloned" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team5.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Oliver Bradley</h4>
-                              <p>Company name</p>
-                            </div>
+                    ">
+                  <div class="owl-item cloned" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team5.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Oliver Bradley</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item cloned" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team6.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>William James</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team6.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>William James</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item active" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team3.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Isabella Mia</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item active" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team3.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Isabella Mia</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item active" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team4.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Benjamin Lucas</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item active" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team4.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Benjamin Lucas</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team5.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Oliver Bradley</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team5.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Oliver Bradley</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team6.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>William James</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team6.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>William James</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item cloned" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team3.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Isabella Mia</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team3.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Isabella Mia</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="owl-item cloned" style="width: 575px">
-                      <div class="item">
-                        <div class="slider-info mt-lg-4 mt-3">
-                          <div class="img-circle">
-                            <img
-                              src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team4.jpg"
-                              class="img-fluid testimonial-img"
-                              alt="client image"
-                            />
-                          </div>
-                          <div class="message">
-                            <span
-                              class="fa fa-quote-left"
-                              aria-hidden="true"
-                            ></span>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Assumenda corporis deleniti praesentium
-                              doloremque. Repellendus soluta quos nemo quisquam
-                              consectetur temporibus quam obcaecati sapiente
-                              quaerat et.
-                            </p>
-                            <div class="name mt-4">
-                              <h4>Benjamin Lucas</h4>
-                              <p>Company name</p>
-                            </div>
+                  </div>
+                  <div class="owl-item cloned" style="width: 575px">
+                    <div class="item">
+                      <div class="slider-info mt-lg-4 mt-3">
+                        <div class="img-circle">
+                          <img
+                            src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/team4.jpg"
+                            class="img-fluid testimonial-img" alt="client image" />
+                        </div>
+                        <div class="message">
+                          <span class="fa fa-quote-left" aria-hidden="true"></span>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Assumenda corporis deleniti praesentium
+                            doloremque. Repellendus soluta quos nemo quisquam
+                            consectetur temporibus quam obcaecati sapiente
+                            quaerat et.
+                          </p>
+                          <div class="name mt-4">
+                            <h4>Benjamin Lucas</h4>
+                            <p>Company name</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="owl-nav disabled">
-                  <button type="button" role="presentation" class="owl-prev">
-                    <span aria-label="Previous">
-                      <span class="fa fa-angle-left"></span>
-                    </span></button
-                  ><button type="button" role="presentation" class="owl-next">
-                    <span aria-label="Next">
-                      <span class="fa fa-angle-right"></span>
-                    </span>
-                  </button>
-                </div>
-                <div class="owl-dots">
-                  <button role="button" class="owl-dot active"></button>
-                  <button role="button" class="owl-dot"></button>
-                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev">
+                  <span aria-label="Previous">
+                    <span class="fa fa-angle-left"></span>
+                  </span></button><button type="button" role="presentation" class="owl-next">
+                  <span aria-label="Next">
+                    <span class="fa fa-angle-right"></span>
+                  </span>
+                </button>
+              </div>
+              <div class="owl-dots">
+                <button role="button" class="owl-dot active"></button>
+                <button role="button" class="owl-dot"></button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="build py-5" id="myBody">
-      <div class="container py-md-3 text-center HomePageCTA">
-        <div class="header-section text-center mx-auto">
-          <h3>Ready to build your own brand community?</h3>
-          <p class="my-3">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-            sodales quis. Integer sit amet mattis quam.
-          </p>
-        </div>
-        <div class="buttons mt-5">
-          <a href="#" class="btn btn-outline-primary mr-2 theme-button"
-            >BOOK DEMO</a
-          >
-          <a href="#" class="btn btn-primary theme-button ml-2">GET STARTED</a>
-        </div>
+    </div>
+  </section>
+  <section class="build py-5" id="myBody">
+    <div class="container py-md-3 text-center HomePageCTA">
+      <div class="header-section text-center mx-auto">
+        <h3>Ready to build your own brand community?</h3>
+        <p class="my-3">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+          sodales quis. Integer sit amet mattis quam.
+        </p>
       </div>
-    </section>
-    <footer>
-      <div class="footer py-5" id="myBody">
-        <div class="container">
-          <div class="row">
-            <div class="row-left col-lg-6">
-              <div class="row">
-                <div class="col-md-4">
-                  <h3>Meta</h3>
-                  <ul>
-                    <li>
-                      <a href="https://wp.w3layouts.com/masterwork/wp-login.php"
-                        >Log In</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://wp.w3layouts.com/masterwork/feed/"
-                        >Entries Feed</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://wp.w3layouts.com/masterwork/comments/feed/"
-                        >Comments Feed</a
-                      >
-                    </li>
-                    <li><a href="https://wordpress.org/">WordPress.Org</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4 mt-md-0 mt-4">
-                  <h3>Categories</h3>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://wp.w3layouts.com/masterwork/category/business/"
-                        >Business</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://wp.w3layouts.com/masterwork/category/design/"
-                        >Design</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://wp.w3layouts.com/masterwork/category/industry/"
-                        >Industry</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://wp.w3layouts.com/masterwork/category/programming/"
-                        >Programming</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4 mt-md-0 mt-4">
-                  <h3>Archives</h3>
-                  <ul>
-                    <li>
-                      <a href="https://wp.w3layouts.com/masterwork/2021/03/"
-                        >March 2021</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+      <div class="buttons mt-5">
+        <a href="#" class="btn btn-outline-primary mr-2 theme-button">BOOK DEMO</a>
+        <a href="#" class="btn btn-primary theme-button ml-2">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer py-5" id="myBody">
+      <div class="container">
+        <div class="row">
+          <div class="row-left col-lg-6">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Meta</h3>
+                <ul>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/wp-login.php">Log In</a>
+                  </li>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/feed/">Entries Feed</a>
+                  </li>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/comments/feed/">Comments Feed</a>
+                  </li>
+                  <li><a href="https://wordpress.org/">WordPress.Org</a></li>
+                </ul>
               </div>
-            </div>
-            <div
-              class="row-right col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5"
-            >
-              <h3>Newsletter</h3>
-              <div class="email">
-                <h4>Get latest updates and offers.</h4>
-                <form action class="subscribe" method="post">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required
-                  />
-                  <button type="submit">Go</button>
-                </form>
-                <p>
-                  Sign up for our latest news & articles. We won’t give you spam
-                  mails.
-                </p>
+              <div class="col-md-4 mt-md-0 mt-4">
+                <h3>Categories</h3>
+                <ul>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/category/business/">Business</a>
+                  </li>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/category/design/">Design</a>
+                  </li>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/category/industry/">Industry</a>
+                  </li>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/category/programming/">Programming</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 mt-md-0 mt-4">
+                <h3>Archives</h3>
+                <ul>
+                  <li>
+                    <a href="https://wp.w3layouts.com/masterwork/2021/03/">March 2021</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div
-            class="d-flex below-section justify-content-between align-items-center pt-4 mt-5"
-          >
-            <div class="text-lg-left text-center">
+          <div class="row-right col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5">
+            <h3>Newsletter</h3>
+            <div class="email">
+              <h4>Get latest updates and offers.</h4>
+              <form action class="subscribe" method="post">
+                <input type="email" name="email" placeholder="Email Address" required />
+                <button type="submit">Go</button>
+              </form>
               <p>
-                © 2024 Masterwork. All Rights Reserved | WordPress Theme by
-                <a href="https://w3layouts.com/">W3Layouts.</a>
+                Sign up for our latest news & articles. We won’t give you spam
+                mails.
               </p>
             </div>
-            <div class="columns-2 mt-lg-0 mt-3">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/w3layouts/"
-                    ><span class="fa fa-facebook"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://in.linkedin.com/company/w3layouts"
-                    ><span class="fa fa-linkedin" aria-hidden="true"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/W3layouts"
-                    ><span class="fa fa-twitter" aria-hidden="true"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://google.com/W3layouts"
-                    ><span class="fa fa-twitter" aria-hidden="true"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/W3layouts"
-                    ><span class="fa fa-github" aria-hidden="true"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
+          </div>
+        </div>
+        <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+          <div class="text-lg-left text-center">
+            <p>
+              © 2024 Masterwork. All Rights Reserved | WordPress Theme by
+              <a href="https://w3layouts.com/">W3Layouts.</a>
+            </p>
+          </div>
+          <div class="columns-2 mt-lg-0 mt-3">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/w3layouts/"><span class="fa fa-facebook"></span></a>
+              </li>
+              <li>
+                <a href="https://in.linkedin.com/company/w3layouts"><span class="fa fa-linkedin"
+                    aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/W3layouts"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <a href="https://google.com/W3layouts"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <a href="https://github.com/W3layouts"><span class="fa fa-github" aria-hidden="true"></span></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- BACK TO TOP -->
-    <buntton
-      class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
-      id="movetop"
-    >
-      <span class="fa fa-angle-up"></span>
-    </buntton>
-    <!-- Bootstrap JavaScript Libraries -->
+    </div>
+  </footer>
+  <!-- BACK TO TOP -->
+  <buntton class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" id="movetop">
+    <span class="fa fa-angle-up"></span>
+  </buntton>
+  <!-- Bootstrap JavaScript Libraries -->
 
-    <!-- JS INDEX -->
+  <!-- JS INDEX -->
 
-    <!--CDN Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- BACK TO TOP -->
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+  <!--CDN Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- BACK TO TOP -->
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
       }
+    }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <script src="../MasterWork/js/util.js"></script>
-    <script src="../MasterWork/js/main-backtotop.js"></script>
-    <!-- CDN WAYPOINT -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- JS COUNTUP -->
-    <script src="../MasterWork/js/jquery.countup.js"></script>
-    <!-- <script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="/js/util.js"></script>
+  <script src="/js/main-backtotop.js"></script>
+  <!-- CDN WAYPOINT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- JS COUNTUP -->
+  <script src="/js/jquery.countup.js"></script>
+  <!-- <script>
       $(".counter").countUp({
         time: 2000,
         delay: 10,
       });
     </script> -->
-    <script>
-      $(".counter").countUp();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <script>
+    $(".counter").countUp();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-      integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".owl-two").owlCarousel({
-          loop: true,
-          margin: 0,
-          dots: true,
-          nav: true,
-          dotsEach: 4,
+  <script>
+    $(document).ready(function () {
+      $(".owl-two").owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: true,
+        nav: true,
+        dotsEach: 4,
 
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            480: {
-              items: 1,
-              nav: false,
-            },
-            667: {
-              items: 1,
-              nav: false,
-            },
-            1000: {
-              items: 2,
-              nav: false,
-            },
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
           },
-        });
-      });
-    </script>
-    <script src="../MasterWork/js/easyResponsiveTabs.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        //Horizontal Tab
-        $("#parentHorizontalTab").easyResponsiveTabs({
-          type: "default", //Types: default, vertical, accordion
-          width: "auto", //auto or any width like 600px
-          fit: true, // 100% fit in a container
-          tabidentify: "hor_1", // The tab groups identifier
-          activate: function (event) {
-            // Callback function if tab is switched
-            var $tab = $(this);
-            var $info = $("#nested-tabInfo");
-            var $name = $("span", $info);
-            $name.text($tab.text());
-            $info.show();
+          480: {
+            items: 1,
+            nav: false,
           },
-        });
+          667: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 2,
+            nav: false,
+          },
+        },
       });
-    </script>
-    <script src="./js/darklight.js"></script>
-  </body>
+    });
+  </script>
+  <script src="/js/easyResponsiveTabs.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //Horizontal Tab
+      $("#parentHorizontalTab").easyResponsiveTabs({
+        type: "default", //Types: default, vertical, accordion
+        width: "auto", //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: "hor_1", // The tab groups identifier
+        activate: function (event) {
+          // Callback function if tab is switched
+          var $tab = $(this);
+          var $info = $("#nested-tabInfo");
+          var $name = $("span", $info);
+          $name.text($tab.text());
+          $info.show();
+        },
+      });
+    });
+  </script>
+  <script src="/js/darklight.js"></script>
+</body>
+
 </html>
