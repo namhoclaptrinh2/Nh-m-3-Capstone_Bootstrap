@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+  font-family: "Nunito Sans", sans-serif;
+}
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+/* W31-INDEX */
+.w31-index3{
+  background-color: #F7F9FC;
+}
+.w31-index3 .col-sm-6 h6{
+  color: #dc4f72;
+  /* font-size: 18px; */
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.w31-index3 .col-sm-6 h3{
+  font-size: 35px;
+  line-height: 40px;
+  color: black;
+  font-weight: 700;
+}
+.w31-index3 .col-sm-6 p{
+  font-size: 16px;
+  font-weight: normal;
+  color: #5a5a5a;
+  line-height: 24px;
+}
+.theme-button{
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 30px;
+  line-height: 52px;
+  background-color: #dc4f72;
+  border: 1px solid transparent;
+  transition: 0.5s all;
+}
+.theme-button:hover{
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+.w31-index3 .col-sm-6 img{
+  box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.09) ;
+  transition: all 0.5s;
+}
+.w31-index3 .col-sm-6 img:hover{
+  transform: translateY(-10px);
+}
+
+/* .dark#mybody .w31-index3{
+  background-color: #191c1d;
+} */
+/* COUNTUP */
+.countup{
+  background-color: #F7F9FC;
+
+}
+.countup .countup__item{
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  border: 1px solid #f8f9fa;
+  transition: all 0.5s;
+}
+.countup .countup__item:hover{
+  box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+.countup .countup__item h4{
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  line-height: 24px;
+}
+.countup .countup__item p.counter{
+  font-size: 50px;
+  color: #dc4f72;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px 0 15px;
+}
+/* w3l-index4 */
+.w3l-index4 .new-block{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+.w3l-index4 .middle-section{
+  max-width: 550px;
+}
+.w3l-index4 .middle-section h2{
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+  font-weight: 700;
+}
+.w3l-index4 .link-list-menu p{
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+.w3l-index4 .link-list-menu .theme-button{
+  background-color: white;
+}
+.w3l-index4 .link-list-menu .theme-button:hover{
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* w3l-faq-block */
+.w3l-faq-block{
+  background-color: #F7F9FC;
+}
+.header-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.w3l-faq-block .header-section h6{
+  color: #dc4f72;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.w3l-faq-block .header-section h3{
+  color: black;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+}
+.w3l-faq-block .header-section p{
+  font-size: 16px;
+  color: #5a5a5a;
+  font-weight: 400;
+
+}
+.w3l-faq-block .faq-image{
+  position: sticky;
+  top: 80px;
+}
+.w3l-faq-block .faq-image img{
+  box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  ;
+  border-radius: 6px;
+  transition: 0.3s cubic-bezier(0.4, 0.46, 1, 1);
+}
+.w3l-faq-block .faq-image img:hover{
+  transform: translateY(-0.5rem);
+  transition: 0.3s ease-in-out;
+}
+.w3l-faq-block .w31-faq ul{
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0;
+}
+.w3l-faq-block .w31-faq ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+}
+
+.w3l-faq-block .w31-faq ul li{
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 6px;
+  list-style: none;
+
+}
+.w3l-faq-block .w31-faq .faq-page ul li i{
+  position: absolute;
+  margin-top: 16px;
+  right: 30px;
+  top: 16px;
+}
+.w3l-faq-block .w31-faq .faq-page ul li input[type=checkbox]:checked ~ i::before{
+  transform: translate(2px,0) rotate(45deg);
+}
+.w3l-faq-block .w31-faq .faq-page ul li input[type=checkbox]:checked ~ i::after{
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+.w3l-faq-block .w31-faq .faq-page ul li i::before {
+  content: "";
+  position: absolute;
+  background-color: #2C3038;
+  width: 3px;
+  height: 9px;
+  transform: translate(-2px, 0) rotate(45deg);
+  transition: all 0.25s ease-in-out;
+}
+.w3l-faq-block .w31-faq .faq-page ul li i::after {
+  content: "";
+  position: absolute;
+  background-color: #2C3038;
+  width: 3px;
+  height: 9px;
+  transform: translate(2px, 0) rotate(-45deg);
+  transition: all 0.25s ease-in-out;
+}
+
+.w3l-faq-block .w31-faq .faq-page ul li h2{
+  font-size: 20px;
+  line-height: 1;
+  font-weight: normal;
+  cursor: pointer;
+  color: #2C3038;
+  margin: 0;
+}
+.w3l-faq-block .w31-faq .faq-page ul li p{
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0,0);
+  margin-top: 14px;
+  margin-bottom: 0;
+  z-index: 2;
+  transition: all 0.25s;
+}
+.w3l-faq-block .w31-faq .faq-page ul li input[type=checkbox]:checked ~ p{
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0,50%);
+}
+.backToTop{
+  /* display: block; */
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #dc4f72;
+  border-radius: 6px;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: .7;
+}
+/* DARKLIGHT */
+.dark.w31-index3{
+background-color: #191c1d;
+}
+.dark.w31-index3 .col-sm-6 h3{
+  color: white;
+}
+.dark.w31-index3 .col-sm-6 p{
+  color: #b7b7b7;
+}
+.dark.countup{
+  background-color: #191c1d;
+}
+.dark.countup .countup__item{
+  background-color: #131617;
+  border: 1px solid #333;
+}
+.dark.countup .countup__item h4{
+  color: white;
+}
+.dark.w3l-faq-block{
+  background-color: #191c1d;
+}
+.dark.w3l-faq-block .header-section h3{
+  color: white;
+}
+.dark.w3l-faq-block .header-section p{
+  color: #b7b7b7;
+}
+.dark.w3l-faq-block .w31-faq ul li{
+  background-color: #131617;
+  border: 1px solid #333;
+}
+.dark.w3l-faq-block .w31-faq .faq-page ul li i::after,.dark.w3l-faq-block .w31-faq .faq-page ul li i::before{
+  background-color: white;
+}
+.dark.w3l-faq-block .w31-faq .faq-page ul li h2{
+  color: white !important;
+}
+.dark.w3l-faq-block .w31-faq .faq-page ul li p{
+  color: #b7b7b7;
+}
+@media (min-width: 576px) {
+  .container{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .mt-sm-0, .my-sm-0 {
+      margin-top: 0 !important;
+  }
+  .col-sm-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .mt-sm-5{
+    margin-top: 3rem !important;
+  }
+}
+@media (max-width:800px){
+  .w3l-faq-block .header-section h3{
+    font-size: 40px;
+    line-height: 50pxpx;
+  }
+}
+@media (max-width:667px){
+  .w3l-index4 .link-list-menu p{
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .w3l-index4 .middle-section a{
+    margin-top: 30px;
+  }
+  .w3l-faq-block .header-section h3{
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media  (min-width: 768px){
+  .pr-md-5{
+    padding-right: 3rem !important;
+  }
+  .pl-md-5, .px-md-5{
+    padding-left: 3rem !important;
+  }
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-md-5{
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .mb-md-5, .my-md-5{
+    margin-bottom: 3rem !important;
+  }
+  .mt-md-4, .my-md-4{
+    margin-top: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 767px){
+  .theme-button{
+    line-height: 44px;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 992px) {
+  .pb-lg-3, .py-lg-3 {
+      padding-bottom: 1rem !important;
+  }
+  .pb-lg-5, .py-lg-5 {
+    padding-bottom: 3rem !important;
+  }
+  .col-lg-4{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .mt-lg-0{
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 1280px) {
+  .container{
+    max-width: 1200px;
+  }
+}
+
